@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/01f5f72a11.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;700&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <script defer type="text/javascript" src="assets/js/apollo.js"></script>
+
+</head>
+
+<body>
+    <header id="header" class="box light-gray">
+       
+        <div class="box-text-1">
+            <img src="assets/img/a.png" class="letter a" alt="">
+            <h1> <span class="bold">Apollo</span> PSD Template</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboirs nisi ut aliquip ex ea
+            </p>
+            <div class="vertical-line"></div>
+        </div>
+        <nav>
+            <input type="checkbox" id="check" style="display: none;">
+            <label for="check" class="checkbtn">
+                <a id="menu">MENU <i class="fas fa-bars"></i></a>
+            </label>
+            <ul id="menu-ul">
+                <li><a href="#text-camera">About me</a></li>
+                <li><a href="#carrusel-big">Photos</a></li>
+                <li><a href="#ut-enim">Ut enim</a></li>
+                <li><a href="#fav-photos">Favourite photos</a></li>
+                <li><a href="#say-hello">Say hello</a></li>
+            </ul>
+        </nav>
+      
+
+    </header>
+
+    <main>
+        <section id="text-camera" class="light-gray">
+            <div>
+                <img src="assets/img/p.png" class="letter p" alt="">
+                <img src="assets/img/camera.png" class="box-image-2" alt="">
+            </div>
+            <div class="box-text-2">
+                <div id="line-text">
+                    <div class="horizontal-line"></div>
+                    <h2> My name is <span class="bold">Apollo</span></h2>
+                </div>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                    natus error sit voluptatemn accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt.
+                    <br>
+                    <br>
+                    Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquamn
+                    elus modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem.
+                </p>
+                
+                    <ul id="rrss">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                    </ul>
+
+                
+            </div>
+
+        </section>
+
+        <section id="carrusel-big">
+            <div class="carrousel">
+                <img src="assets/img/ob.png" class="letter ob" alt="">
+                <div class="grande">
+                    <img src="assets/img/cam.png" alt="Imagen 1" class="img">
+                    <img src="assets/img/flor.png" alt="Imagen 2" class="img">
+                    <img src="assets/img/dept.png" alt="Imagen 2" class="img">
+                    <img src="assets/img/wom.png" alt="Imagen 2" class="img">
+
+                </div>
+                <button class="flecha-left flecha" onclick="left()"><i class="fas fa-arrow-left"></i></button>
+                <button class="flecha-right flecha" onclick="right()"><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+        </section>
+
+        <section class="box light-gray" id="ut-enim">
+            <div class="box-text-3">
+                <img src="assets/img/l.png" class="letter l" alt="">
+                <h2> <span class="bold">Ut enim</span> ad minim </h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                    aspernatur aut odit aut fugit, sed quia consequuntur
+                    magni dolores eos qui ratione voluptatem sequi
+                    nesciut.
+
+                </p>
+                <div class="vertical-line"></div>
+            </div>
+            <div>
+                <img src="assets/img/bridge.png" class="box-image-3" alt="">
+            </div>
+        </section>
+
+        <section class="light-gray slider" id="fav-photos">
+            <img src="assets/img/l.png" class="letter l2" alt="">
+            <!-- Flickity HTML init -->
+            <div class="gallery js-flickity"
+              data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell" id="photo1"></div>
+              <div class="gallery-cell" id="photo2"></div>
+              <div class="gallery-cell" id="photo3"></div> 
+              <div class="gallery-cell" id="photo4"></div>
+              <div class="gallery-cell" id="photo5"></div>
+            </div>
+
+            
+        </section>
+
+    </main>
+
+    <footer class="light-gray" id="say-hello">
+        <div>
+            <img src="assets/img/o.png" class="letter o" alt="">
+            <div id="footer">
+                <div id="footer-text">
+                    <h2> <span class="bold">Say</span> hello </h2>
+                    <p>
+                        Duis aute iruredolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. aspernatur aut odit
+                        aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciut.
+                    </p>
+        
+                </div>
+            </div>
+
+
+            <form action="POST">
+                <div id="formulary">
+                    <input type="email" id="email" name="correo" placeholder="Your Email" required>
+
+                    <input type="text" id="motive" name="motivo" placeholder="Subject" required>
+
+                    <textarea name="mensaje" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <input type="submit" value="SEND MESSAGE" id="boton-enviar">
+
+                </div>
+
+            </form>
+        </div>
+    </footer>
+
+
+</body>
+
