@@ -4,7 +4,11 @@
 }
 
 body{
-    margin: 5%;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1, h2{
@@ -13,16 +17,16 @@ h1, h2{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 p{
     font-family: 'Playfair Display', serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.8em;
     margin-top: 6%;
 }
@@ -34,10 +38,14 @@ p{
 .box{  
     padding: 10%;  
     height:500px;
-    margin-top: 5%;
+    
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+#ut-enim{
+    margin-top: 5%;
 }
 
 
@@ -49,14 +57,9 @@ header, section, footer{
 header{
     background-image: url('../img/header.png') ;
     background-repeat:no-repeat;
-    background-size: 100% 100% ; 
+    background-size: 101% 100% ; 
     position: relative;
 }
-
-body{
-    margin: 5%;
-}
-
 
 .light-gray{
     background-color: #EFEFEF;
@@ -423,6 +426,7 @@ form{
 .gallery {
     background: #EEE;
     z-index: 98;
+    padding-top: 8%;
   }
   
   .gallery-cell {
@@ -481,22 +485,41 @@ form{
 
   /*MEDIAS*/
 
-  @media (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) {
+  @media (min-width: 1300px)  {
   
-  p{
-      font-size: 0.7rem;
-  }
+    body{
+        width: 80vw;
+    }
+
+    header{
+        background-image: url('../img/header.png') ;
+        background-repeat:no-repeat;
+        background-size: 83% 107% ; 
+        background-position: right;
+        position: relative;
+    }
+
+
+    p{
+        font-size: 1rem;
+    }
     
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     h2{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    #header{
+        height: 525px;
+        width: 80vw;
     }
 
     .box-image-2 {
-        width: 91%;
+        width: 74%;
+        margin-left: 15%;
     }
 
     #text-camera {
@@ -506,23 +529,43 @@ form{
 
     .box {
 
-        height: 425px;
+        height: 600px;
 
     }
-    .box-image-3 {
-         display: none;
+
+    #text-camera{
+        height: 600px;
+        margin-bottom: 5%;
+    }
+
+    .light-gray{
+        height: 600px;
+    }
+
+    .gallery{
+        padding-top: 4%;
     }
 
   
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 910px) {
     .box {
 
         display: grid;
         grid-template-columns: 100%;
 
     }
+
+    header{
+        background-image: none;
+    }
+
+    #header{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
     #text-camera {
         display: grid;
         grid-template-columns: 100%;
@@ -587,6 +630,12 @@ form{
         display: block;
         margin: 31px;
         line-height: 30px;
+    }
+
+    #formulary{
+        display: grid;
+        grid-template-columns: 177px 177px;
+        width: 377px;
     }
     
   }
